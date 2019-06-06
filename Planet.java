@@ -24,12 +24,10 @@ public class Planet{
         imgFileName = p.imgFileName;
     }
 
-    public double calcDistance(Planet other){
-        long startTime = System.
-        double R = Math.sqrt(Math.pow(this.xxPos - other.xxPos, 2) + Math.pow(this.yyPos - other.yyPos, 2));
-    }
 
     public double calcDistance(Planet other){
-        return Math.sqrt(Math.pow(this.xxPos - other.xxPos, 2) + Math.pow(this.yyPos - other.yyPos, 2));
+        double R = Math.sqrt((this.xxPos - other.xxPos) * (this.xxPos - other.xxPos) + (this.yyPos - other.yyPos) * (this.yyPos - other.yyPos));
+        return R;
     }
+
 }
